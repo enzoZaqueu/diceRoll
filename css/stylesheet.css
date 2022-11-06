@@ -27,12 +27,16 @@
     min-width: 150px;
   }
   
-  section, .a, .b, .roll {
+  section, .resultadoUm, .resultadoDois, .roll {
     border-radius: 10px;
     box-shadow: 3px 3px 10px #E26868;
   }
+
+  img {
+    width: 100%;
+  }
   
-  .c {
+  .secaoBotoes {
     display: flex;
     align-items: end;
     margin-top: 10px;
@@ -40,20 +44,24 @@
     gap: 1em;
   }
   
-  .a, .b, .roll {
+  .resultadoUm, .resultadoDois, .roll {
     margin: 0 auto;
     width: 100px;
-    min-height: 50px;
+    height: 100px;
     display: flex;
     background-color: #FF9494;
     transition: .2s;
   }
   
-  .d {
+  .fundo {
     background-color: #FF9494;
   }
   
   .roll:active {
     background-color: #E26868;
     scale: .95;
+  }
+
+  #result {
+    font-size: 2rem;
   }
