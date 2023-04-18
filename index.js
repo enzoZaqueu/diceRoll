@@ -23,9 +23,7 @@ function diceRoll() {
     player2.classList.add("scaleTransform");
     setTimeout(function(){
         player2.classList.remove("scaleTransform");
-    },300);
-
-    resultados();
+    },200);
 
     if (diceFaceUm === diceFaceDois) {
         result.innerHTML = "Empate!";
