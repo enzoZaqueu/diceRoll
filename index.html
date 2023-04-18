@@ -5,30 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://em-content.zobj.net/thumbs/120/google/350/game-die_1f3b2.png" type="image/x-icon">
+    <title>Dados</title>
 </head>
 <body>
-    <section class="secaoBotoes">
+  <div>
+
+    <div class="wraper">
+      <div class="dados">
+        <div class="player">
+          <h2>Player 1</h2>
           <div>
-            <h2>Player 1</h2>
-            <div class="resultadoUm">
-                <img src="link/dice1.png" id="player1" alt="">
-            </div>
+            <img src="link/dice1.png" id="player1" alt="dados">
           </div>
-          <div>
-            <h2>Player 2</h2>
-            <div class="resultadoDois">
-                <img src="link/dice1.png" id="player2" alt="">
-            </div>
-          </div>
-        <div class="roll" id="roll">
-          <p>ROLAR</p>
         </div>
-      </section>
-      <section class="fundo">
-         <p id="result">Resultado</p>
-      </section>      
+        
+        <div class="player">
+          <h2>Player 2</h2>
+          <div>
+            <img src="link/dice1.png" id="player2" alt="dados">
+          </div>
+        </div>  
+      </div>
+      <button type="button" id="roll">ROLAR</button>
+    </div>
+  
+    <div >
+      <p id="result">Resultado</p>
+    </div>
+  
+  </div>
+  <div class="footer">
+    Made by Enzo
+  </div>
+
 <script src="index.js"></script>
+
 </body>
 
 </html>
