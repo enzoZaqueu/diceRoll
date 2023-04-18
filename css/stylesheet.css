@@ -101,9 +101,8 @@ button:active {
   }
   .footer {
     position: absolute;
-    bottom: 8px;
-    font-size: .5em;
-    display: none;
+    bottom: 16px;
+    font-size: .8em;
   }
   img {
     max-width: 130px;
