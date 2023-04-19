@@ -12,16 +12,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E86A33;
+  background-color: #303030;
 }
 
 img {
   width: 100%;
   max-width: 200px;
   border-radius: 16px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.5);
+  outline: 1px solid rgba(0, 0, 0, 0.5);
   margin-top: 16px;
-  transition: .2s;
+  transition: .1s;
 }
 
 .dados {
@@ -33,22 +34,21 @@ img {
 }
 
 .player {
-  margin: 0 16px;
+  margin: 0 8px;
 }
 
 .wraper, #result {
   margin: auto;
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
-  transition: .5s;
+  transition: .1s;
 }
 
 #result {
   font-size: 2em;
   margin-top: 16px;
-  background-color: #fa6525;
+  background-color: #FD841F;
   color: white;
   font-weight: bold;
   width: 100%;
@@ -56,29 +56,27 @@ img {
 }
 
 button {
-  background-color: #fa6525;
-  margin: auto;
+  background-color: #FD841F;
+  margin: 16px auto 0;
   padding: 16px;
   border: none;
   font-size: 1.2em;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.5);
   font-weight: bold;
   color: white;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 button:hover {
-  transform: scale(1.1);
-  outline: 5px solid #fa652541;
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
 button:active {
-  transform: scale(0.9);
-}
-
-.scaleTransform {
-  transform: scale(1.05);
+  transform: scale(1);
+  outline: 5px solid #FFD38441;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .footer {
@@ -89,30 +87,31 @@ button:active {
   font-size: .7em;
 }
 
-@media (width < 600px) {
+@media (width < 670px) {
   .dados {
     flex-direction: column;
-  }
-  .player {
-    margin: 8px;
+    gap: 16px;
   }
   #result {
     font-size: 1.6em;
   }
   .footer {
-    position: absolute;
-    bottom: 16px;
-    font-size: .8em;
+    bottom: 12px;
+    scale: .9;
   }
   img {
-    max-width: 130px;
+    max-width: 140px;
     margin: 4px;
   }
   .wraper {
     min-width: 70%;
-    padding: 16px 32px;
+    padding: 16px;
   }
   #result {
     font-size: 1.3em;
+  }
+  button {
+    scale: .8;
+    margin: 4px;
   }
 }
