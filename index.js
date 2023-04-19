@@ -7,7 +7,7 @@ function rollNumber() {
 var players = document.querySelectorAll("img");
 
 function rnd() {
-    var rdnN = Math.random();
+    var rdnN = Math.random() < 0.5 ? -1 : 1;
     return rdnN;
 }
 
@@ -17,7 +17,7 @@ function animInicio() {
     if (i < 5){
         setTimeout(function(){
             for (let index = 0; index < 2; index++) {
-                players[index].style.transform=`rotate(${Math.floor(rnd() * -10) + 5}deg) scale(1.05) translate(${(rnd()*10)-5}px, 5px)`;
+                players[index].style.transform=`rotate(${rnd()*7}deg) scale(1.05) translate(${rnd()*5}px, ${rnd()*2}px)`;
                 players[index].setAttribute("src", `link/dice${rollNumber()}.png`)
             }
             setTimeout(function(){
@@ -41,7 +41,7 @@ function diceRoll() {
     player2.setAttribute("src", `link/dice${diceFaceDois}.png`);
 
     for (let index = 0; index < 2; index++) {
-        players[index].style.transform=`rotate(${Math.floor(rnd() * -10) + 5}deg) scale(1.05)`;
+        players[index].style.transform=`rotate(${rnd()*7}deg) scale(1.05) translate(${rnd()*5}px, ${rnd()*2}px)`;
     }
 
     setTimeout(function(){
